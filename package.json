@@ -1,0 +1,19 @@
+{
+  "name": "blockchain-e-vault-root",
+  "version": "1.0.0",
+  "description": "Blockchain-Based Secure Document Verification & E-Vault (Full-Stack MERN + Solidity)",
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "npm --prefix backend run dev",
+    "client": "npm --prefix frontend run dev",
+    "node": "npm --prefix blockchain run node",
+    "compile": "npm --prefix blockchain run compile",
+    "deploy": "npm --prefix blockchain run deploy",
+    "test:contracts": "npm --prefix blockchain run test",
+    "test:backend": "npm --prefix backend run test",
+    "test": "npm run test:contracts && npm run test:backend"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}

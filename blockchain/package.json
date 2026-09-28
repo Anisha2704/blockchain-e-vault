@@ -1,0 +1,17 @@
+{
+  "name": "blockchain-e-vault-blockchain",
+  "version": "1.0.0",
+  "description": "Hardhat Smart Contract Development Environment",
+  "main": "scripts/deploy.js",
+  "scripts": {
+    "node": "hardhat node",
+    "compile": "hardhat compile",
+    "deploy": "hardhat run scripts/deploy.js --network localhost",
+    "test": "hardhat test"
+  },
+  "dependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^4.0.0",
+    "ethers": "^6.10.0",
+    "hardhat": "^2.19.5"
+  }
+}
